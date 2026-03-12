@@ -1,0 +1,1797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+
+
+	<AddWeaponElu name="rl_dn" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rl_dn" filename="model/weapon/rocketlauncher/rldn.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rocketlauncher05x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rocketlauncher05x2" filename="model/weapon/rocketlauncher/rl_goblin.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="katana_battleaxe2" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana_battleaxe2" filename="model/weapon/katana/katana_battleaxe2.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="shotgun_dn" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun_dn" filename="model/weapon/shotgun/shotgundn.elu" />
+	</AddWeaponElu>
+
+		<AddWeaponElu name="katanaee" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katanaee" filename="model/weapon/katana/katanaee.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="blowmed1" weapon_motion_type = "8" weapon_type = "7" >	
+		<AddBaseModel name="blowmed1" filename="model/weapon/item/bmedikit.elu" />
+	</AddWeaponElu>
+	
+		<AddWeaponElu name="blackshu" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="blackshu" filename="model/weapon/katana/blackshu.elu" />
+	</AddWeaponElu>
+
+		<AddWeaponElu name="blueshur" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="blueshur" filename="model/weapon/katana/blueshur.elu" />
+	</AddWeaponElu>
+
+
+	<!--
+		?? ?? : ??? ??? ????..
+		
+		weapon_motion_type ? ????? ??? motion_type ? ??? ??? ??? ????.
+
+		1 : katana
+		2 : 1h pistol
+		3 : 2h pistol
+		
+			a. pistol
+			b. magnum
+				
+		4 : shotgun
+		
+			a. shotgun
+			b. machinegun
+			
+		5 : rifle
+		6 : grenade type motion
+		
+			a. grenade
+			b. flashbang
+			c. smoke
+			d. tear_gas
+			
+		7 : dagger
+		8 : item ( ??? ??? ?? )
+		
+			a. medikit
+			b. dynamite
+			c. remote_charge ( ?? )
+			d. ???? 
+			e. ???? ( ?? )
+			
+		9 : rocket launcher
+	       10 : 1hp smg
+	       11 : 2hp smg
+	       12 : sword
+	       13 : blade
+	       14 : 2h dagger
+	       
+	    ?? ??? ????? ???? ?? ??? x2? ?? ???.
+	    
+	    	?? ?? : ??? ??? ???? ?? ?? ?? ?? ??? ??..
+	    	
+	    	 1 : katana
+	    	 2 : 1h pistol
+	    	 3 : 2h pistol
+	    	 4 : shotgun
+	    	 5 : machinegun
+	    	 6 : rifle
+	    	 7 : grenade
+	    	 8 : flashbang
+	    	 9 : smoke
+	    	10 : dagger
+	    	11 : medikit
+	    	12 : repairkit
+	    	13 : rlauncher
+	    	14 : 1h smg
+	    	15 : 2h smg
+	    	16 : sword
+	    	17 : blade
+	    	18 : 2h dagger
+	-->
+
+	<!-- dagger -->
+	
+<!--	????
+	<AddWeaponElu name="dagger00" weapon_motion_type = "7" weapon_type = "10" >
+		<AddBaseModel name="dagger00" filename="model/weapon/dagger/dagger01.elu" />
+		<AddAnimation name="idle"     filename="model/weapon/dagger/dagger01_idle.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+		<AddAnimation name="load"     filename="model/weapon/dagger/dagger01_load.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+		<AddAnimation name="attack"   filename="model/weapon/dagger/dagger01_attack.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+	</AddWeaponElu>
+-->	
+
+	
+<!-- ORGINAL PART -->
+	<AddWeaponElu name="dagger01" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger01" filename="model/weapon/dagger/dagger01.elu" />
+	</AddWeaponElu>
+	
+        <AddWeaponElu name="dagger01x2" weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger01x2" filename="model/weapon/dagger/dagger01.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger02" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger02" 	filename="model/weapon/dagger/dagger02.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger02x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger02x2"	filename="model/weapon/dagger/dagger02.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger03" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger03" 	filename="model/weapon/dagger/dagger03.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger03x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger03x2"	filename="model/weapon/dagger/dagger03.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger04" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger04" 	filename="model/weapon/dagger/dagger04.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger04x2" weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger04x2" filename="model/weapon/dagger/dagger04.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger05" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger05" 	filename="model/weapon/dagger/dagger05.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger05x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger05x2" filename="model/weapon/dagger/dagger05.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger06" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger06" 	filename="model/weapon/dagger/dagger06.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger06x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger06x2"	filename="model/weapon/dagger/dagger06.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dagger07" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger07" 	filename="model/weapon/dagger/dagger07.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger07x2" weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger07x2" filename="model/weapon/dagger/dagger07.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger08" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger08" 	filename="model/weapon/dagger/dagger08.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger08x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger08x2" filename="model/weapon/dagger/dagger08.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger09" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger09" 	filename="model/weapon/dagger/dagger09.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger09x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger09x2"	filename="model/weapon/dagger/dagger09.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dagger10" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger10" 	filename="model/weapon/dagger/dagger10.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger10x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger10x2"	filename="model/weapon/dagger/dagger10.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dagger11" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger11" 	filename="model/weapon/dagger/dagger11.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger11x2"	weapon_motion_type = "14" weapon_type = "18" >	
+		<AddBaseModel name="dagger11x2"	filename="model/weapon/dagger/dagger11.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dagger12" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger12" 	filename="model/weapon/dagger/dagger12.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="dagger_wood" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dagger_wood" filename="model/weapon/dagger/dagger_wood.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dagger_woodx2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="dagger_woodx2" filename="model/weapon/dagger/dagger_wood.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="kunai" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="kunai" 	filename="model/weapon/dagger/daggerku.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="shock" 	weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="shock" 	filename="model/weapon/dagger/daggerAS.elu" />
+	</AddWeaponElu>
+
+	<!-- grenade . a -->
+
+	<AddWeaponElu name="grenade01" weapon_motion_type = "6" weapon_type = "7" >	
+		<AddBaseModel name="grenade01" filename="model/weapon/grenade/grenade01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="Palmpou_baby" weapon_motion_type = "6" weapon_type = "7" >	
+		<AddBaseModel name="Palmpou_baby" filename="model/weapon/grenade/Palmpou_baby.elu" />
+	</AddWeaponElu>
+
+	<!-- grenade . b . flashbang -->
+
+	<AddWeaponElu name="flashbang01" weapon_motion_type = "6" weapon_type = "8" >
+		<AddBaseModel name="flashbang01" filename="model/weapon/grenade/flashbang01.elu" />
+	</AddWeaponElu>
+	
+	<!-- grenade . c . smoke -->
+	
+	<AddWeaponElu name="smoke01" weapon_motion_type = "6" weapon_type = "9" >
+		<AddBaseModel name="smoke01" filename="model/weapon/grenade/smoke01.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="fake02" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="fake02" filename="model/weapon/item/medickit_rx.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="fake01" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="fake01" filename="model/weapon/item/repairkit_rx.elu" />
+	</AddWeaponElu>
+
+	<!-- grenade . d . tear_gas -->
+
+	
+	<!-- katana -->
+
+	<AddWeaponElu name="katana01" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana01" filename="model/weapon/katana/katana01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana02" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana02" filename="model/weapon/katana/katana02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana03" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana03" filename="model/weapon/katana/katana03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana04" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana04" filename="model/weapon/katana/katana04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana05" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana05" filename="model/weapon/katana/katana05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana06" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana06" filename="model/weapon/katana/katana06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana07" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana07" filename="model/weapon/katana/katana07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana08" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana08" filename="model/weapon/katana/katana08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana09" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana09" filename="model/weapon/katana/katana09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana10" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana10" filename="model/weapon/katana/katana10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana11" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana11" filename="model/weapon/katana/katana11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana12" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana12" filename="model/weapon/katana/katana12.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana13" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana13" filename="model/weapon/katana/katana13.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana14" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana14" filename="model/weapon/katana/katana14.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana15" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana15" filename="model/weapon/katana/katana15.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana_wood" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana_wood" filename="model/weapon/katana/katana_wood.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana_skel" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana_skel" filename="model/weapon/katana/katana_skel.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="Bloana01" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="Bloana01" filename="model/weapon/katana/Bloana01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="katanGre" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katanGre" filename="model/weapon/katana/katanGre.elu" />
+	</AddWeaponElu>
+
+        <AddWeaponElu name="palm123" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="palm123" filename="model/weapon/katana/palm123.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="goblin" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="goblin" filename="model/weapon/katana/goblin.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="kobolt" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="kobolt" filename="model/weapon/katana/kobolt.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="skeleton" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="skeleton" filename="model/weapon/katana/skeleton.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="katana_battleaxe" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana_battleaxe" filename="model/weapon/katana/katana_battleaxe.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana17" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="katana17" filename="model/weapon/katana/katana17.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="abyss" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="abyss" filename="model/weapon/katana/katana_abys.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="nemesis" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="nemesis" filename="model/weapon/katana/katana_neme.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="phantom" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="phantom" filename="model/weapon/katana/katana_phan.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="palmpousword" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="palmpousword" filename="model/weapon/katana/katana_palmpou.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="testdual" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="testdual" filename="model/weapon/katana/testdual.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="deradil" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="deradil" filename="model/weapon/katana/deradil.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="katana18" weapon_motion_type = "1" weapon_type = "1" >		
+		<AddBaseModel name="shura" filename="model/weapon/katana/katana18.elu" />	
+	</AddWeaponElu>
+	<AddWeaponElu name="caesar" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="caesar" filename="model/weapon/katana/caesar.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Drakyl6" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="Drakyl6" filename="model/weapon/katana/Drakyl6.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="GunBlade" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="GunBlade" filename="model/weapon/katana/GunBlade.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="IceDragon11" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="IceDragon11" filename="model/weapon/katana/IceDragon11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="MysticSword" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="MysticSword" filename="model/weapon/katana/MysticSword.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Gravity" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="Gravity" filename="model/weapon/katana/Gravity.elu" />
+	</AddWeaponElu>
+
+	<!-- pistol -->
+
+	<AddWeaponElu name="pistol01" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol01" filename="model/weapon/pistol/pistol01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol01x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol01x2" filename="model/weapon/pistol/pistol01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol02" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol02" filename="model/weapon/pistol/pistol02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol02x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol02x2" filename="model/weapon/pistol/pistol02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol03" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol03" filename="model/weapon/pistol/pistol03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol03x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol03x2" filename="model/weapon/pistol/pistol03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol04" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol04" filename="model/weapon/pistol/pistol04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol04x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol04x2" filename="model/weapon/pistol/pistol04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol05" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol05" filename="model/weapon/pistol/pistol05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol05x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol05x2" filename="model/weapon/pistol/pistol05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol06" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol06" filename="model/weapon/pistol/pistol06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol06x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol06x2" filename="model/weapon/pistol/pistol06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol07" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol07" filename="model/weapon/pistol/pistol07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol07x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol07x2" filename="model/weapon/pistol/pistol07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol08" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol08" filename="model/weapon/pistol/pistol08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol08x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol08x2" filename="model/weapon/pistol/pistol08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol0 " weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol09" filename="model/weapon/pistol/pistol09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol09x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol09x2" filename="model/weapon/pistol/pistol09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol10" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol10" filename="model/weapon/pistol/pistol10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol10x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol10x2" filename="model/weapon/pistol/pistol10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol11" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol11" filename="model/weapon/pistol/pistol11.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pistol_cru" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol_cru" filename="model/weapon/pistol/pistol_cru.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol_crux2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol_crux2" filename="model/weapon/pistol/pistol_cru.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pistol11x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol11x2" filename="model/weapon/pistol/pistol11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol12" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol12" filename="model/weapon/pistol/pistol12.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol12x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol12x2" filename="model/weapon/pistol/pistol12.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol13" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol13" filename="model/weapon/pistol/pistol13.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol13x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol13x2" filename="model/weapon/pistol/pistol13.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol14" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol14" filename="model/weapon/pistol/pistol14.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol14x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol14x2" filename="model/weapon/pistol/pistol14.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol15" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol15" filename="model/weapon/pistol/pistol15.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol15x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol15x2" filename="model/weapon/pistol/pistol15.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol16" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol16" filename="model/weapon/pistol/pistol16.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol16x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol16x2" filename="model/weapon/pistol/pistol16.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol17" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol17" filename="model/weapon/pistol/pistol17.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol17x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol17x2" filename="model/weapon/pistol/pistol17.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol18" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol18" filename="model/weapon/pistol/pistol18.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol18x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol18x2" filename="model/weapon/pistol/pistol18.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol19" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol19" filename="model/weapon/pistol/pistol19.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol19x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol19x2" filename="model/weapon/pistol/pistol19.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol20" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol20" filename="model/weapon/pistol/pistol20.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol20x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol20x2" filename="model/weapon/pistol/pistol20.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol21" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol21" filename="model/weapon/pistol/pistol_odd.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pistol21x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol21x2" filename="model/weapon/pistol/pistol_odd.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="eq_pistol_04_gold" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="eq_pistol_04_gold" filename="model/weapon/pistol/pistol04_gold.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="eq_pistol_04_goldx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="eq_pistol_04_gold" filename="model/weapon/pistol/pistol04_gold.elu" />
+	</AddWeaponElu>
+
+  	<AddWeaponElu name="pistol_brazil" weapon_motion_type = "2" weapon_type = "3" >
+    		<AddBaseModel name="pistol_brazil" filename="model/weapon/pistol/pistol_brazil.elu" />
+  	</AddWeaponElu>
+  	<AddWeaponElu name="pistol_brazilx2" weapon_motion_type = "3" weapon_type = "3" >
+    		<AddBaseModel name="pistol_brazilx2" filename="model/weapon/pistol/pistol_brazil.elu" />
+  	</AddWeaponElu>
+        <AddWeaponElu name="pistol_event" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol_event" filename="model/weapon/pistol/pistol_event.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pistol_dnx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol_dnx2" filename="model/weapon/pistol/don_rev.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Mic" weapon_motion_type = "2" weapon_type = "3" >
+		<AddBaseModel name="Mic" filename="model/weapon/pistol/Mic.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="deagle" weapon_motion_type = "2" weapon_type = "3" >
+		<AddBaseModel name="deagle" filename="model/weapon/pistol/deagle.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="eq_pistol_02" weapon_motion_type = "2" weapon_type = "3" >
+		<AddBaseModel name="eq_pistol_02" filename="model/weapon/pistol/deagle.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Parabellum" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="Parabellum" filename="model/weapon/pistol/Parabellum.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="StampedeBisley" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="StampedeBisley" filename="model/weapon/pistol/StampedeBisley.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Powmia" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="Powmia" filename="model/weapon/pistol/Powmia.elu" />
+	</AddWeaponElu>
+
+
+	<!-- SMG -->
+
+	<AddWeaponElu name="smg01" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg01" filename="model/weapon/pistol/smg01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg01x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg01x2" filename="model/weapon/pistol/smg01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg02" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg02" filename="model/weapon/pistol/smg02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg02x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg02x2" filename="model/weapon/pistol/smg02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg03" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg03" filename="model/weapon/pistol/smg03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg03x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg03x2" filename="model/weapon/pistol/smg03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg04" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg04" filename="model/weapon/pistol/smg04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg04x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg04x2" filename="model/weapon/pistol/smg04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg05" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg05" filename="model/weapon/pistol/smg05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg05x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg05x2" filename="model/weapon/pistol/smg05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg06" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg06" filename="model/weapon/pistol/smg06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg06x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg06x2" filename="model/weapon/pistol/smg06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg07" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg07" filename="model/weapon/pistol/smg07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg07x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg07x2" filename="model/weapon/pistol/smg07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg08" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg08" filename="model/weapon/pistol/smg08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg08x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg08x2" filename="model/weapon/pistol/smg08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg09" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg09" filename="model/weapon/pistol/smg09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg09x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg09x2" filename="model/weapon/pistol/smg09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg10" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg10" filename="model/weapon/pistol/smg10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg10x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg10x2" filename="model/weapon/pistol/smg10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="smg11" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="smg11" filename="model/weapon/pistol/smg11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name=" mg11x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="smg11x2" filename="model/weapon/pistol/smg11.elu" />
+	</AddWeaponElu>
+
+	<!-- rifle -->
+
+	<AddWeaponElu name="rifle01" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle01" filename="model/weapon/rifle/rifle01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle02" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle02" filename="model/weapon/rifle/rifle02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle03" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle03" filename="model/weapon/rifle/rifle03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle04" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle04" filename="model/weapon/rifle/rifle04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle05" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle05" filename="model/weapon/rifle/rifle05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle06" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle06" filename="model/weapon/rifle/rifle06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle07" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle07" filename="model/weapon/rifle/rifle07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle08" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle08" filename="model/weapon/rifle/rifle08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle09" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle09" filename="model/weapon/rifle/rifle09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle10" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle10" filename="model/weapon/rifle/as rifle01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle11" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle11" filename="model/weapon/rifle/as rifle02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle12" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle12" filename="model/weapon/rifle/as rifle03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle13" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle13" filename="model/weapon/rifle/as rifle04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle14" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle14" filename="model/weapon/rifle/rifle10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle15" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle15" filename="model/weapon/rifle/rifle11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle16" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle16" filename="model/weapon/rifle/rifle16.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle17" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle17" filename="model/weapon/rifle/rifle17.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle_event" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle_event" filename="model/weapon/rifle/rifle_event.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rifle_dn" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle_dn" filename="model/weapon/rifle/rifledon.elu" />
+	</AddWeaponElu>
+
+
+<!-- Snipers -->
+
+	<AddWeaponElu name="eq_sniper1" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="eq_sniper1" filename="model/weapon/rifle/sniper1.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="eq_sniper2" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="eq_sniper2" filename="model/weapon/rifle/sniper2.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="eq_sniper03" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="eq_sniper03" filename="model/weapon/rifle/sniper3.elu" />
+	</AddWeaponElu>
+
+
+	<AddWeaponElu name="eq_sniper04" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="eq_sniper04" filename="model/weapon/rifle/sniper4.elu" />
+	</AddWeaponElu>
+
+
+
+
+
+
+<!-- Double Rifles Starts HERE -->
+	<AddWeaponElu name="rifle01x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle01x2" filename="model/weapon/rifle/rifle01.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rifle02x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle02x2" filename="model/weapon/rifle/rifle02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle03x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle03x2" filename="model/weapon/rifle/rifle03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle04x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle04x2" filename="model/weapon/rifle/rifle04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle05x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle05x2" filename="model/weapon/rifle/rifle05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle06x2" weapon_motion_type = "11" weapon_type = "15" > 
+		<AddBaseModel name="rifle06x2" filename="model/weapon/rifle/rifle06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle07x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle07x2" filename="model/weapon/rifle/rifle07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle08x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle08x2" filename="model/weapon/rifle/rifle08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle09x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle09x2" filename="model/weapon/rifle/rifle09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle10x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle10x2" filename="model/weapon/rifle/as rifle01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle11x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle11x2" filename="model/weapon/rifle/as rifle02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle12x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle12x2" filename="model/weapon/rifle/as rifle03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle13x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle13x2" filename="model/weapon/rifle/as rifle04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle14x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle14x2" filename="model/weapon/rifle/rifle10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle15x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle15x2" filename="model/weapon/rifle/rifle11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle16x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle16x2" filename="model/weapon/rifle/rifle16.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rifle17x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="rifle17x2" filename="model/weapon/rifle/rifle17.elu" />
+	</AddWeaponElu>
+	<!-- shotgun -->
+
+	<AddWeaponElu name="shotgun01" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun01" filename="model/weapon/shotgun/shotgun01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun02" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun02" filename="model/weapon/shotgun/shotgun02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun03" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun03" filename="model/weapon/shotgun/shotgun03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun04" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun04" filename="model/weapon/shotgun/shotgun04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun05" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun05" filename="model/weapon/shotgun/shotgun05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun06" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun06" filename="model/weapon/shotgun/shotgun06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun07" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun07" filename="model/weapon/shotgun/shotgun07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun08" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun08" filename="model/weapon/shotgun/shotgun08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun09" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun09" filename="model/weapon/shotgun/shotgun09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun10" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun10" filename="model/weapon/shotgun/shotgun10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun10_1" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun10_1" filename="model/weapon/shotgun/shotgun10_1.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun11" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun11" filename="model/weapon/shotgun/shotgun11.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun_shattered" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun_shattered" filename="model/weapon/shotgun/shotgun_shattered.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgunbrazil" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunbrazil" filename="model/weapon/pistol/pistol_brazil.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="cruxshotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="cruxshotgun" filename="model/weapon/pistol/pistol_cru.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="eq_shotgun_06" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="eq_shotgun_06" filename="model/weapon/shotgun/shotgun06_silver.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="eq_shotgun_09" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="eq_shotgun_09" filename="model/weapon/shotgun/shotgun09_gold.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="shotgun06_silver" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun06_silver" filename="model/weapon/shotgun/shotgun06_silver.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun09_gold" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun09_gold" filename="model/weapon/shotgun/shotgun09_gold.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgunsilver" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun06_silver" filename="model/weapon/shotgun/shotgun06_silver.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgungold" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun09_gold" filename="model/weapon/shotgun/shotgun09_gold.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun_shattered" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun_shattered" filename="model/weapon/shotgun/shotgun_shattered.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgun_event" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun_event" filename="model/weapon/shotgun/shotgun_event.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunDNB" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunDNB" filename="model/weapon/shotgun/shotgunDNB.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="blueshotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="blueshotgun" filename="model/weapon/shotgun/blueshotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunND" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunND" filename="model/weapon/shotgun/shotgunND.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="pinkshotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="pinkshotgun" filename="model/weapon/shotgun/pinkshotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="polkashotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="polkashotgun" filename="model/weapon/shotgun/polkashotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunTA" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunTA" filename="model/weapon/shotgun/shotgunTA.elu" />
+	</AddWeaponElu>
+
+
+
+	<!-- Double Shottys Start Here -->
+	<AddWeaponElu name="shotgun01x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun01x2" filename="model/weapon/shotgun/shotgun01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun02x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun02x2" filename="model/weapon/shotgun/shotgun02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun03x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun03x2" filename="model/weapon/shotgun/shotgun03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun04x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun04x2" filename="model/weapon/shotgun/shotgun04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun05x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun05x2" filename="model/weapon/shotgun/shotgun05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun06x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun06x2" filename="model/weapon/shotgun/shotgun06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun07x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun07x2" filename="model/weapon/shotgun/shotgun07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun08x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun08x2" filename="model/weapon/shotgun/shotgun08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun09x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun09x2" filename="model/weapon/shotgun/shotgun09.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun10x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun10x2" filename="model/weapon/shotgun/shotgun10.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun10_1x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="shotgun10_1x2" filename="model/weapon/shotgun/shotgun10_1.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="shotgun09_goldx2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="shotgun09_goldx2" filename="model/weapon/shotgun/shotgun09_gold.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="shotgun06_silverx2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="shotgun06_silverx2" filename="model/weapon/shotgun/shotgun06_silver.elu" />
+	</AddWeaponElu>
+
+	<!-- MachineGun -->
+	
+	<AddWeaponElu name="machinegun01" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun01" filename="model/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="machinegun02" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun02" filename="model/weapon/shotgun/machinegun02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="machinegun03" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun03" filename="model/weapon/shotgun/machinegun03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="machinegun04" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun04" filename="model/weapon/shotgun/machinegun04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="machinegun05" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun05" filename="model/weapon/shotgun/machinegun05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="machinegun06" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="machinegun06" filename="model/weapon/shotgun/machinegun06.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun01x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun01" filename="model/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun02x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun01" filename="model/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun03x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun01" filename="mod l/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun04x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun01" filename="model/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun05x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun01" filename="model/weapon/shotgun/machinegun01.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="machinegun06x2" weapon_motion_type = "11" weapon_type = "15" >
+		<AddBaseModel name="machinegun06" filename="model/weapon/shotgun/machinegun06.elu" />
+	</AddWeaponElu>
+
+	<!-- rocket launcher -->
+	
+	<AddWeaponElu name="rocketlauncher" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher" filename="model/weapon/rocketlauncher/rl01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher02" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher02" filename="model/weapon/rocketlauncher/rl02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher03" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher03" filename="model/weapon/rocketlauncher/rl03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher04" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher04" filename="model/weapon/rocketlauncher/rl04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher05" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher05" filename="model/weapon/rocketlauncher/rl05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher06" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher06" filename="model/weapon/rocketlauncher/rl06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rocketlauncher07" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncher07" filename="model/weapon/rocketlauncher/rl07.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="goblin_launcher" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="goblin_launcher" filename="model/weapon/rocketlauncher/rl_goblin.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rocket" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocket" filename="model/weapon/rocketlauncher/rocket.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="rocketlauncherCH" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rocketlauncherCH" filename="model/weapon/rocketlauncher/rlCH.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="eq_rl_goblin_gold" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="eq_rl_goblin_gold" filename="model/weapon/rocketlauncher/rl_goblin_gold.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="eq_wd_rocketlauncher_palmpou" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="eq_wd_rocketlauncher_palmpou" filename="model/weapon/rocketlauncher/rl_palmpou.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rl_event" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rl_event" filename="model/weapon/rocketlauncher/rlevent.elu" />
+	</AddWeaponElu>
+	
+	
+	<!-- item -->
+	<AddWeaponElu name="box" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="box" filename="model/weapon/item/ef_box.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="medikit" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="medikit" filename="model/weapon/item/medikit.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="repairkit" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="repairkit" filename="model/weapon/item/repairkit.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="repairkit_rx" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="repairkit_rx" filename="model/weapon/item/repairkit_rx.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="medickit_rx" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="medickit_rx" filename="model/weapon/item/medickit_rx.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="bulletkit" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="bulletkit" filename="model/weapon/item/magazine.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="samgak01" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="samgak01" filename="model/weapon/item/medickit_samgak01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="candy" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="candy" filename="model/weapon/item/medickit_candy.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="chocobar" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="chocobar" filename="model/weapon/item/medickit_choco.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="Portal" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="portal" filename="model\weapon\item\ef_portal.elu" />
+	</AddWeaponElu>
+   	<AddWorldItemElu name ="luckybag">
+    		<AddBaseModel name ="luckybag" filename="model/weapon/item/luckybag.elu"/>
+   	</AddWorldItemElu>
+	<AddWeaponElu name="medickit_turkey" weapon_motion_type="8" weapon_type="11">
+		<AddBaseModel name="medickit_turkey" filename="model/weapon/item/medickit_turkey.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="medickit_icecream" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="medickit_icecream" filename="model/weapon/item/medickit_icecream.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pizza" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="pizza" filename="model/weapon/item/pizza.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="landmine02" weapon_motion_type="8" weapon_type="11">
+		<AddBaseModel name="landmine02" filename="model/weapon/item/landmine02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="golemtoy" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="golemtoy" filename="model/weapon/toys/golem.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="kingtoy" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="kingtoy" filename="model/weapon/toys/king.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="supertoy" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="supertoy" filename="model/weapon/toys/superion.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="unholytoy" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="unholytoy" filename="model/weapon/toys/theunholy.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rd" weapon_motion_type="8" weapon_type="11">
+		<AddBaseModel name="rd" filename="model/weapon/item/ef_red.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="gn" weapon_motion_type="8" weapon_type="12">
+		<AddBaseModel name="gn" filename="model/weapon/item/ef_green.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="yw" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="yw" filename="model/weapon/item/ef_yellow.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="ix" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="ix" filename="model/weapon/item/ef_box.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pl" weapon_motion_type = "8" weapon_type = "7" >	
+		<AddBaseModel name="pl" filename="model/weapon/item/ef_portal.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="luckybag" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="luckybag" filename="model/weapon/item/luckybag.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="bt" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="bt" filename="model/weapon/item/ef_prop.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="landmine01" weapon_motion_type = "8" weapon_type = "7" >	
+		<AddBaseModel name="landmine01" filename="model/weapon/item/landmine01.elu" />
+	</AddWeaponElu>
+
+	<!-- sword -->
+
+	<AddWeaponElu name="sword01" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword01" filename="model/weapon/sword/sword01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword02" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword02" filename="model/weapon/sword/sword02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword03" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword03" filename="model/weapon/sword/sword03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword04" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword04" filename="model/weapon/sword/sword04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword05" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword05" filename="model/weapon/sword/sword05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword_wood" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword_wood" filename="model/weapon/sword/sword_wood.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="sword_woo2" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword_woo2" filename="model/weapon/sword/sword_woo2.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="swordBL" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordBL" filename="model/weapon/sword/swordBL.elu" />
+	</AddWeaponElu>
+        	<AddWeaponElu name="swordPO" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordPO" filename="model/weapon/sword/swordPO.elu" />
+	</AddWeaponElu>
+	        <AddWeaponElu name="swordIC" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordIC" filename="model/weapon/sword/swordIC.elu" />
+	</AddWeaponElu>
+        	<AddWeaponElu name="swordCR" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordCR" filename="model/weapon/sword/swordCR.elu" />
+	</AddWeaponElu>
+            	<AddWeaponElu name="swordLI" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordLI" filename="model/weapon/sword/swordLI.elu" />
+	</AddWeaponElu>    
+                <AddWeaponElu name="sworECR" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sworECR" filename="model/weapon/sword/sworECR.elu" />
+	</AddWeaponElu>  
+                <AddWeaponElu name="swordST" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordST" filename="model/weapon/sword/swordST.elu" />
+	</AddWeaponElu>  
+                <AddWeaponElu name="swordDA" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordDA" filename="model/weapon/sword/swordDA.elu" />
+	</AddWeaponElu>  
+                <AddWeaponElu name="swordRZ" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="swordRZ" filename="model/weapon/ word/swordRZ.elu" />
+	</AddWeaponElu>
+                <AddWeaponElu name="CLOUD05" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="CLOUD05" filename="model/weapon/sword/CLOUD05.elu" />
+	</AddWeaponElu>
+                <AddWeaponElu name="Tich" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="Tich" filename="model/weapon/sword/Tich.elu" />
+	</AddWeaponElu>
+                <AddWeaponElu name="rl01" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="rl01" filename="model/weapon/rocketlauncher/rl01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword_event" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword_event" filename="model/weapon/sword/sword_event.elu" />
+	</AddWeaponElu>
+        <!-- blade -->
+
+	<AddWeaponElu name="blade01" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade01" filename="model/weapon/blade/blade01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade02" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade02" filename="model/weapon/blade/blade02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade03" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade03" filename="model/weapon/blade/blade03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade04" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade04" filename="model/weapon/blade/blade04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade05" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade05" filename="model/weapon/blade/blade05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade06" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade06" filename="model/weapon/blade/blade06.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade07" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade07" filename="model/weapon/blade/blade07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade08" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade08" filename="model/weapon/blade/blade08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade_wood" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade_wood" filename="model/weapon/blade/blade_wood.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade_wing" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade_wing" filename="model/weapon/blade/blade_wing.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="blade_wang" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade_wang" filename="model/weapon/blade/blade_wang.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="bladeBL" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="bladeBL" filename="model/weapon/blade/bladeBL.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade_gdk" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blade_gdk" filename="model/weapon/blade/blade_gdk.elu" />
+	</AddWeaponElu>
+
+	<!-- swordx2 -->
+
+	<AddWeaponElu name="sword01x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword01x2" filename="model/weapon/sword/sword01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword02x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword02x2" filename="model/weapon/sword/sword02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword03x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword03x2" filename="model/weapon/sword/sword03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword04x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword04x2" filename="model/weapon/sword/sword04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword05x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword05x2" filename="model/weapon/sword/sword05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword_woodx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword_woodx2" filename="model/weapon/sword/sword_wood.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="sword_woo2x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sword_woo2x2" filename="model/weapon/sword/sword_woo2.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordBLx2" weapon_motion_type = "13" weapon_type = "18" >
+		 AddBaseModel name="swordBLx2" filename="model/weapon/sword/swordBL.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordPOx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordPOx2" filename="model/weapon/sword/swordPO.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordICx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordICx2" filename="model/weapon/sword/swordIC.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordCRx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordCRx2" filename="model/weapon/sword/swordCR.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordLIx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordLIx2" filename="model/weapon/sword/swordLI.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="sworECRx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="sworECRx2" filename="model/weapon/sword/swordECR.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="swordSTx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordSTx2" filename="model/weapon/sword/swordST.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="swordDAx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordDAx2" filename="model/weapon/sword/swordDA.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="swordRZx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="swordRZx2" filename="model/weapon/sword/swordRZ.elu" />
+	</AddWeaponElu>
+        <AddWeaponElu name="CLOUD05x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="CLOUD05x2" filename="model/weapon/sword/CLOUD05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="claymorex2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="claymorex2" filename="model/weapon/sword/claymore.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="keyx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="keyx2" filename="model/weapon/sword/keyblade.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="pripx2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="pripx2" filename="model/weapon/sword/prip.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rz1x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz1x2" filename="model/weapon/sword/rz1.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rz1" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz1" filename="model/weapon/sword/rz1.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz2" filename="model/weapon/sword/rz2.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz2x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz2x2" filename="model/weapon/sword/rz2.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz3" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz3" filename="model/weapon/sword/rz3.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz3x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz3x2" filename="model/weapon/sword/rz3.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz4" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz4" filename="model/weapon/sword/rz4.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="rz4x2" weapon_motion_type = "13" weapon_type = "18" >
+		<AddBaseModel name="rz4x2" filename="model/weapon/sword/rz4.elu" />
+	</AddWeaponElu>
+		<!-- bladex2 -->
+
+	<AddWeaponElu name="blade01x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade01x2" filename="model/weapon/blade/blade01.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade02x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade02x2" filename="model/weapon/blade/blade02.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade03x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade03x2" filename="model/weapon/blade/blade03.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade04x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade04x2" filename="model/weapon/blade/blade04.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade05x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade05x2" filename="model/weapon/blade/blade05.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade06x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade06x2" filename="model/weapon/blade/blade06.elu"  />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="blade07x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade07x2" filename="model/weapon/blade/blade07.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade08x2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade08x2" filename="model/weapon/blade/blade08.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blade_woodx2" weapon_motion_type = "14" weapon_type = "18" >
+		<AddBaseModel name="blade_woodx2" filename="model/weapon/blade/blade_wood.elu" />
+	</AddWeaponElu>
+
+<!-- By Alfredao & Stuart -->
+<!-- Shotguns -->
+
+		<AddWeaponElu name="shotgun_event" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgun_event" filename="model/weapon/shotgun/shotgun_event.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunDNB" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunDNB" filename="model/weapon/shotgun/shotgunDNB.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="blueshotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="blueshotgun" filename="model/weapon/shotgun/blueshotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunND" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunND" filename="model/weapon/shotgun/shotgunND.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="pinkshotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="pinkshotgun" filename="model/weapon/shotgun/pinkshotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="polkashotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="polkashotgun" filename="model/weapon/shotgun/polkashotgun.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="shotgunTA" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="shotgunTA" filename="model/weapon/shotgun/shotgunTA.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="1866Yellowboy" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="1866Yellowboy" filename="model/weapon/shotgun/1866Yellowboy.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="the_cracken" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="the_cracken" filename="model/weapon/shotgun/the_cracken.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="Weatherby" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="Weatherby" filename="model/weapon/shotgun/Weatherby.elu" />
+	</AddWeaponElu>
+		<AddWeaponElu name="BenneliM4Super90" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="BenneliM4Super90" filename="model/weapon/shotgun/BenneliM4Super90.elu" />
+	</AddWeaponElu>
+
+<!-- Katanas -->
+
+	<AddWeaponElu name="Lightsaber" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="Lightsaber" filename="model/weapon/katana/Lightsaber.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="swordfish" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="swordfish" filename="model/weapon/katana/swordfish.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="ChainsawBlade" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="ChainsawBlade" filename="model/weapon/sword/ChainsawBlade.elu" />
+	</AddWeaponElu>
+
+<!-- Shotguns -->
+
+        <AddWeaponElu name="pistol_event" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="pistol_event" filename="model/weapon/pistol/pistol_event.elu" />
+	</AddWeaponElu>
+
+        <AddWeaponElu name="1861NavyTiffany" weapon_motion_type = "2" weapon_type = "2" >
+		<AddBaseModel name="1861NavyTiffany" filename="model/weapon/pistol/1861NavyTiffany.elu" />
+	</AddWeaponElu>
+
+        <AddWeaponElu name="elvis_rev" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="elvis_rev" filename="model/weapon/pistol/elvis_rev.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pistol_dnx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="pistol_dnx2" filename="model/weapon/pistol/don_rev.elu" />
+	</AddWeaponElu>
+
+<!-- Rifle -->
+
+	<AddWeaponElu name="rifle_event" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle_event" filename="model/weapon/rifle/rifle_event.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="rifle_dn" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="rifle_dn" filename="model/weapon/rifle/rifledon.elu" />
+	</AddWeaponElu>
+
+<!-- RocketLauncher -->
+
+	<AddWeaponElu name="rl_event" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="rl_event" filename="model/weapon/rocketlauncher/rlevent.elu" />
+	</AddWeaponElu>
+
+<!-- Itens -->
+
+	<AddWeaponElu name="sword_event" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="sword_event" filename="model/weapon/sword/sword_event.elu" />
+	</AddWeaponElu>
+
+
+	<AddWeaponElu name="rd" weapon_motion_type="8" weapon_type="11">
+		<AddBaseModel name="rd" filename="model/weapon/item/ef_red.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="gn" weapon_motion_type="8" weapon_type="12">
+		<AddBaseModel name="gn" filename="model/weapon/item/ef_green.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="yw" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="yw" filename="model/weapon/item/ef_yellow.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="ix" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="ix" filename="model/weapon/item/ef_box.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="pl" weapon_motion_type = "8" weapon_type = "7" >	
+		<AddBaseModel name="pl" filename="model/weapon/item/ef_portal.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="luckybag" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="luckybag" filename="model/weapon/item/luckybag.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="bt" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="bt" filename="model/weapon/item/ef_prop.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="landmine01" weapon_motion_type = "8" weapon_type = "7" >	
+		<AddBaseModel name="landmine01" filename="model/weapon/item/landmine01.elu" />
+	</AddWeaponElu>
+
+<!-- www.SystemGamesOnline.com -->
+<!-- By Stuart &  noitoMe -->
+
+<!--Deities-->
+ <AddWeaponElu name="Deities_Cross" weapon_motion_type = "1" weapon_type = "1" >
+  <AddBaseModel name="Deities_Cross" filename="model/weapon/Deities/Deities_Cross.elu" />
+ </AddWeaponElu>
+
+ <AddWeaponElu name="Freya's_Enchanton" weapon_motion_type = "4" weapon_type = "4" >
+  <AddBaseModel name="Freya's_Enchanton" filename="model/weapon/Deities/Freya's Enchanton.elu" />
+ </AddWeaponElu>
+ 
+ <AddWeaponElu name="Odin's_Judgement" weapon_motion_type = "9" weapon_type = "13" >
+  <AddBaseModel name="Odin's_Judgement" filename="model/weapon/Deities/Odin's Judgement.elu" />
+ </AddWeaponElu>
+ 
+ <AddWeaponElu name="Valkyrie's_Blessing" weapon_motion_type = "2" weapon_type = "2" >
+  <AddBaseModel name="Valkyrie's_Blessing" filename="model/weapon/Deities/Valkyrie's Blessing.elu" />
+ </AddWeaponElu>
+
+ <AddWeaponElu name="Valkyrie's_Blessingx2" weapon_motion_type = "3" weapon_type = "3" >
+  <AddBaseModel name="Valkyrie's_Blessingx2" filename="model/weapon/Deities/Valkyrie's Blessing.elu" />
+ </AddWeaponElu>
+
+ <AddWeaponElu name="Lightsabr2" weapon_motion_type = "1" weapon_type = "1" >
+  <AddBaseModel name="Lightsabr2" filename="model/weapon/katana/Lightsabr2.elu" />
+ </AddWeaponElu>
+
+	<AddWeaponElu name="rd2" weapon_motion_type="8" weapon_type="11">
+		<AddBaseModel name="rd2" filename="model/weapon/toys/ef_red.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="gn2" weapon_motion_type="8" weapon_type="12">
+		<AddBaseModel name="gn2" filename="model/weapon/toys/ef_green.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="yw2" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="yw2" filename="model/weapon/toys/ef_yellow.elu" />
+	</AddWeaponElu>
+<!-- www.SystemGunz.com -->
+
+<!-- By Alfredao, mas é só Alfredao mesmo, ele fez tudo sozinho -->
+
+	<AddWeaponElu name="blackaxe" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="blackaxe" filename="model/weapon/katana/blackaxe.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="zariche" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="zariche" filename="model/weapon/katana/Zariche.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="negotiator" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="negotiator" filename="model/weapon/katana/negotiator.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="blacklust" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="blacklust" filename="model/weapon/katana/blacklust.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="bohemia" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="bohemia" filename="model/weapon/katana/Bohemia.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="visage" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="visage" filename="model/weapon/katana/Visage.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="lotus" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="lotus" filename="model/weapon/katana/L_Katana.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="lightsa" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="lightsa" filename="model/weapon/katana/Lightsaber.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="soulcalibur" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="soulcalibur" filename="model/weapon/katana/soulcalibur.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="flesh" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="flesh" filename="model/weapon/katana/bloodflesh.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dragonscim" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="dragonscim" filename="model/weapon/katana/Dragon_Skimitar.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="elven" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="elven" filename="model/weapon/katana/ElvenBlades.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="millenium" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="millenium" filename="model/weapon/katana/MilleniumBlade.elu" />
+	</AddWeaponElu>	
+
+	<AddWeaponElu name="medge" weapon_motion_type = "1" weapon_type = "1" >
+		<AddBaseModel name="medge" filename="model/weapon/katana/mysticedge.elu" />
+	</AddWeaponElu>
+
+
+<!-- Shotgun -->
+
+	<AddWeaponElu name="battle_tank" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="battle_tank" filename="model/weapon/shotgun/battle_tank.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="crisis" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="crisis" filename="model/weapon/shotgun/crisis.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="fntact" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="fntact" filename="model/weapon/shotgun/FN_Tactical_Shotgun1.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="nano_shotgun" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="nano_shotgun" filename="model/weapon/shotgun/nano_shotgun.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="m249" weapon_motion_type = "4" weapon_type = "5" >
+		<AddBaseModel name="m249" filename="model/weapon/shotgun/SAW-M249.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="spas-12" weapon_motion_type = "4" weapon_type = "4" >
+		<AddBaseModel name="spas-12" filename="model/weapon/shotgun/spas-12.elu" />
+	</AddWeaponElu>
+
+<!-- FIm By Alfredao -->
+
+<!-- Inicio By Alfredao 2-->
+
+	<AddWeaponElu name="pilfer" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="pilfer" filename="model/weapon/blade/pilfer.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="shadownight" weapon_motion_type = "13" weapon_type = "17" >
+		<AddBaseModel name="shadownight" filename="model/weapon/blade/ShadowNightKatana.elu" />
+	</AddWeaponElu>
+
+
+<!-- Daggers -->
+
+	<AddWeaponElu name="abbydagger" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="abbydagger" filename="model/weapon/dagger/AbyssalDagger.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dtime" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="dtime" filename="model/weapon/dagger/dtime.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="gloria" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="gloria" filename="model/weapon/dagger/gloria.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="inferno" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="inferno" filename="model/weapon/dagger/Inferno.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="sand" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="sand" filename="model/weapon/dagger/sand.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="scorpion" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="scorpion" filename="model/weapon/dagger/Scorpion.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="tristin" weapon_motion_type = "7" weapon_type = "10" >	
+		<AddBaseModel name="tristin" filename="model/weapon/dagger/Tristin.elu" />
+	</AddWeaponElu>
+
+
+<!-- Itens -->
+
+	<AddWeaponElu name="cookie" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="cookie" filename="model/weapon/item/Cookie.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="milk" weapon_motion_type = "8" weapon_type = "12" >
+		<AddBaseModel name="milk" filename="model/weapon/item/MilkGlass.elu" />
+	</AddWeaponElu>
+
+<!-- Pistolas -->
+
+	<AddWeaponElu name="c_uzi" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="c_uzi" filename="model/weapon/pistol/c_uzi.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="cattlemanx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="cattlemanx2" filename="model/weapon/pistol/cattleman.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="colt1911x2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="colt1911x2" filename="model/weapon/pistol/Colt_1911.elu" />
+	</AddWeaponElu>
+	
+	<AddWeaponElu name="CrysisPistolx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="CrysisPistolx2" filename="model/weapon/pistol/crysisPistol.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="dwarfx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="dwarfx2" filename="model/weapon/pistol/dwarf.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="ebonyx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="ebonyx2" filename="model/weapon/pistol/Ebony.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="deaglex2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="deaglex2" filename="model/weapon/pistol/G_Deagle.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="ivoryx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="ivoryx2" filename="model/weapon/pistol/Ivory.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="MP5K" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="MP5K" filename="model/weapon/pistol/MP5K.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="p90" weapon_motion_type = "10" weapon_type = "14" >
+		<AddBaseModel name="p90" filename="model/weapon/pistol/P90v2.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="parabellumx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="parabellumx2" filename="model/weapon/pistol/Parabellum.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="bowx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="bowx2" filename="model/weapon/pistol/pistol_bowgun.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="powmiax2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="powmiax2" filename="model/weapon/pistol/Powmia.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="redemptionx2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="redemptionx2" filename="model/weapon/pistol/Redemption.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="stampedex2" weapon_motion_type = "3" weapon_type = "3" >
+		<AddBaseModel name="stampedex2" filename="model/weapon/pistol/StampedeBisley.elu" />
+	</AddWeaponElu>
+
+
+<!-- Rifles -->
+
+	<AddWeaponElu name="AK47" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="AK47" filename="model/weapon/rifle/AK47.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="ak_gold" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="ak_gold" filename="model/weapon/rifle/AK-47_gd.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="awp" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="awp" filename="model/weapon/rifle/AWP_Rifle.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="barret" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="barret" filename="model/weapon/rifle/Barett-50.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="c_famas" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="c_famas" filename="model/weapon/rifle/c_famas.elu" />
+	</AddWeaponElu>	
+
+	<AddWeaponElu name="c_snipe" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="c_snipe" filename="model/weapon/rifle/crysism.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="famas" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="famas" filename="model/weapon/rifle/FAMASv4.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="G36" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="G36" filename="model/weapon/rifle/G36.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="lancer" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="lancer" filename="model/weapon/rifle/lancer.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="MP5" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="MP5" filename="model/weapon/rifle/MP5.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="nano_snipe" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="nano_snipe" filename="model/weapon/rifle/nano_snipe.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="scar" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="scar" filename="model/weapon/rifle/SCAR.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="eq_sniper03" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="eq_sniper03" filename="model/weapon/rifle/sniper3.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="viking" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="viking" filename="model/weapon/rifle/VikingAsltRifle.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="x5combo" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="x5combo" filename="model/weapon/rifle/X5CombRifle.elu" />
+	</AddWeaponElu>	
+
+	<AddWeaponElu name="xm8" weapon_motion_type = "5" weapon_type = "6" >
+		<AddBaseModel name="xm8" filename="model/weapon/rifle/XM8_Carbine.elu" />
+	</AddWeaponElu>	
+
+
+<!-- FIm By Alfredao 2-->
+
+<!-- By Alfredao 3 -->
+
+<!-- Launchers -->
+	<AddWeaponElu name="cannon" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="cannon" filename="model/weapon/rocketlauncher/cannon.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="samus" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="samus" filename="model/weapon/rocketlauncher/SamusCannon.elu" />
+	</AddWeaponElu>
+	<AddWeaponElu name="nuke" weapon_motion_type = "9" weapon_type = "13" >
+		<AddBaseModel name="nuke" filename="model/weapon/rocketlauncher/nuke.elu" />
+	</AddWeaponElu>
+
+<!-- Swords -->
+
+	<AddWeaponElu name="crystal" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="crystal" filename="model/weapon/sword/crystal.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="kulutues" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="kulutues" filename="model/weapon/sword/Kulutues.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="souledge3" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="souledge3" filename="model/weapon/sword/Soul_Edge3.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="souledge" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="souledge" filename="model/weapon/sword/Soul_Edge.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="warglaive" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="warglaive" filename="model/weapon/sword/warglaive.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="zangetsu" weapon_motion_type = "12" weapon_type = "16" >
+		<AddBaseModel name="zangetsu" filename="model/weapon/sword/zangetsu.elu" />
+	</AddWeaponElu>
+
+<!-- Fim By Alfredao 3-->
+
+<!-- Olha o Alfredao Colocando Doritos no Jogo -->
+
+	<AddWeaponElu name="Collisions_Pizza" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="Collisions_Pizza" filename="model/weapon/item/Collisions_Pizza.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="confrutos" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="confrutos" filename="model/weapon/item/confrutos.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="Blazin_Buffalo" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="Blazin_Buffalo" filename="model/weapon/item/Blazin_Buffalo.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="Cool_Ranch" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="Cool_Ranch" filename="model/weapon/item/Cool_Ranch.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="Doritos_Nacho" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="Doritos_Nacho" filename="model/weapon/item/Doritos_Nacho.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="hot_cheeto" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="hot_cheeto" filename="model/weapon/item/hot_cheeto.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="HersheyBar" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="HersheyBar" filename="model/weapon/item/HersheyBar.elu" />
+	</AddWeaponElu>
+
+	<AddWeaponElu name="Yellowstickle" weapon_motion_type = "8" weapon_type = "11" >
+		<AddBaseModel name="Yellowstickle" filename="model/weapon/item/popstickle.elu" />
+	</AddWeaponElu>
+
+<!-- Fim Doritos -->
+</xml>

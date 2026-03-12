@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<GAMETYPE id="solo">
+		<SPAWN item="bullet02" timesec="10">
+			<POSITION>-544.00000000 2080.00000000 488.00000000</POSITION>
+		</SPAWN>
+	</GAMETYPE>
+
+	<GAMETYPE id="team">
+		<SPAWN item="bullet02" timesec="10">
+			<POSITION>-544.00000000 2080.00000000 488.00000000</POSITION>
+		</SPAWN>
+	</GAMETYPE>
+</XML>

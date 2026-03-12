@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="main">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<INCLUDE>BitmapAlias.txt</INCLUDE>
+	<INCLUDE>templates.txt</INCLUDE>
+	<INCLUDE>Login.txt</INCLUDE>
+	<INCLUDE>NetmarbleLogin.txt</INCLUDE>
+	<INCLUDE>extra_on.tga</INCLUDE>
+	<INCLUDE>Stage.txt</INCLUDE>
+	<INCLUDE>StageCreateFrame.txt</INCLUDE>
+	<INCLUDE>StageJoinFrame.txt</INCLUDE>
+	<INCLUDE>PrivateStageJoinFrame.txt</INCLUDE>
+	<INCLUDE>StageListFrame.txt</INCLUDE>
+	<INCLUDE>StageSettingFrame.txt</INCLUDE>
+	<INCLUDE>ChannelListFrame.txt</INCLUDE>
+	<INCLUDE>MapFrame.txt</INCLUDE>
+	<INCLUDE>CombatInterface.txt</INCLUDE>
+	<INCLUDE>Greeter.txt</INCLUDE>
+	<INCLUDE>Option.txt</INCLUDE>
+	<INCLUDE>Shop.txt</INCLUDE>
+	<INCLUDE>BuyConfirm.txt</INCLUDE>
+	<INCLUDE>Equipment.txt</INCLUDE>
+	<INCLUDE>CharSelection.txt</INCLUDE>
+	<INCLUDE>CharCreation.txt</INCLUDE>
+	<INCLUDE>CharDetail_Info.txt</INCLUDE>
+	<INCLUDE>ResizeConfirm.txt</INCLUDE>
+	<INCLUDE>NetPortConfirm.txt</INCLUDE>
+	<INCLUDE>112Confirm.txt</INCLUDE>
+	<INCLUDE>Clan.txt</INCLUDE>
+	<INCLUDE>CharInfo.txt</INCLUDE>
+	<INCLUDE>Replay.txt</INCLUDE>
+	<INCLUDE>GameResult.txt</INCLUDE>
+	<INCLUDE>MonsterBook.txt</INCLUDE>
+	<INCLUDE>WarningMessages.txt</INCLUDE>
+</XML>

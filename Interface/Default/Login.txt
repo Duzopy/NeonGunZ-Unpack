@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Login">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Login ìœˆë„ìš°
+
+   
+   Ultima AtualizaÃ§Ã£o       : 07-Agosto-2009
+   Editor      				: Alfredo Costa - alfredocosta@live.com
+   
+-->
+
+
+<!-- í”„ë ˆìž„ ìƒì„± : Login -->
+	<FRAME item="Login">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- Picture -->
+	<PICTURE item="Login_BackgrdImg" parent="Login">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+<LABEL item="Login_ConnectingMsg" parent="Login">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>200</X>
+			<Y>450</Y>
+			<W>400</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+<!-- í”„ë ˆìž„ ìƒì„± : LoginFrame -->
+	<FRAME item="LoginFrame" parent="Login">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>100</X>
+			<Y>60</Y>
+			<W>404</W>
+			<H>250</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- Picture : íŒ¨ë„ ì´ë¯¸ì§€ (imagen de fundo)-->
+	<PICTURE item="Login_Panel" parent="LoginFrame">
+		<BOUNDS>
+			<X>40</X>
+			<Y>0</Y>
+			<W>320</W>
+			<H>210</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+
+<!-- Label : Gunz Longin ( texto de login) -->
+	<LABEL item="Label" parent="LoginFrame">
+		<FONT>FONTa10_O2Wht</FONT>
+		<TEXTCOLOR>
+			<R>233</R>
+			<G>233</G>
+			<B>233</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>62</X>
+			<Y>0</Y>
+			<W>230</W>
+			<H>43</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOGIN_01</TEXT> <!-- GunZ Login -->
+	</LABEL>
+
+
+<!-- ì„œë²„ ì„ íƒ -->
+	<!-- SERVERVIEW : ì„œë²„ ì„ íƒ -->
+	<SERVERVIEW item="SelectedServer" parent="LoginFrame">
+		<BOUNDS>
+			<X>67</X>
+			<Y>46</Y>
+			<W>280</W>
+			<H>120</H>
+		</BOUNDS>
+	</SERVERVIEW>
+	
+	
+
+
+<!-- ì•„ì´ë”” ìž…ë ¥ -->
+	<!-- Label : ì•„ì´ë”” (usuÃ¡rio)-->
+	<LABEL item="Label" parent="LoginFrame">
+		<FONT>FONTa10_O2Wht</FONT>
+		<TEXTCOLOR>
+			<R>233</R>
+			<G>233</G>
+			<B>233</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>62</X>
+			<Y>140</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOGIN_02</TEXT> <!-- User ID -->
+	</LABEL>
+
+	<!-- LISTBOX : ë’·ë°°ê²½ìš© -->
+	<LISTBOX item="nulllistbox" parent="LoginFrame">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>58</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+	<LISTBOX item="nulllistbox" parent="LoginFrame">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>58</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+
+	<!-- Edit : ì•„ì´ë”” ìž…ë ¥ì°½ -->
+	<EDIT item="LoginID" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>58</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</EDIT>
+
+
+<!-- ë¹„ë°€ë²ˆí˜¸ ìž…ë ¥ -->
+	<!-- Label : ë¹„ë°€ë²ˆí˜¸ -->
+	<LABEL item="Label" parent="LoginFrame">
+		<FONT>FONTa10_O2Wht</FONT>
+		<TEXTCOLOR>
+			<R>233</R>
+			<G>233</G>
+			<B>233</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>165</X>
+			<Y>140</Y>
+			<W>150</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOGIN_03</TEXT> <!-- Password -->
+	</LABEL>
+
+	<!-- LISTBOX : ë’·ë°°ê²½ìš© -->
+	<LISTBOX item="nulllistbox" parent="LoginFrame">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>160</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+	<LISTBOX item="nulllistbox" parent="LoginFrame">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>160</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<ENABLE>FALSE</ENABLE>
+	</LISTBOX>
+
+	<!-- Edit : ë¹„ë°€ë²ˆí˜¸ ìž…ë ¥ì°½ -->
+	<EDIT item="LoginPassword" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<PASSWORD>true</PASSWORD>
+		<BOUNDS>
+			<X>160</X>
+			<Y>160</Y>
+			<W>95</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</EDIT>
+
+
+<!-- Label : ë¡œê·¸ì¸ ì—ëŸ¬ -->
+	<LABEL item="LoginError" parent="LoginFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>110</X>
+			<Y>184</Y>
+			<W>195</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	
+	
+<!-- ë²„íŠ¼ -->
+	<!-- Button : ë¡œê·¸ì¸ ë²„íŠ¼ -->
+	<BUTTON item="LoginOK" parent="LoginFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>262</X>
+			<Y>160</Y>
+			<W>85</W>
+			<H>25</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_LOGIN_04</TEXT> <!-- Login(&amp;G) -->
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BUTTON>
+
+
+
+<!-- BMBUTTON : ì¢…ë£Œ ë²„íŠ¼ -->
+	<BMBUTTON item="Exit" parent="Login">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">sair_off.tga</BITMAP>
+		<BITMAP type="over">sair_on.tga</BITMAP>
+		<BITMAP type="down">sair_off.tga</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_LOGIN_05</CONFIRMMESSAGE> <!-- Do you want to quit the game? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BMBUTTON>	
+	
+<!-- ì„œë²„ IP ì„¤ì • -->
+	<!-- Label : ì„œë²„ IP -->
+	<LABEL item="LabelServerIP" parent="LoginFrame">
+		<BOUNDS>
+			<X>130</X>
+			<Y>202</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Debug Server</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<!-- Edit : IP ì£¼ì†Œ ìž…ë ¥ì°½ -->
+	<EDIT item="ServerAddress" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>215</X>
+			<Y>202</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+
+	<!-- Edit : IP í¬íŠ¸ ìž…ë ¥ì°½ -->
+	<EDIT item="ServerPort" parent="LoginFrame">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>330</X>
+			<Y>202</Y>
+			<W>45</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+</XML>

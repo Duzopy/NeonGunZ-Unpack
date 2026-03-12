@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ChannelList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="ChannelListFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>434</W>
+			<H>435</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_CLF_01</TEXT> <!-- 채널 리스트 -->
+	</FRAME> 
+
+	<PICTURE item="Fundo_Canal" parent="ChannelListFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>434</W>
+			<H>435</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>FundoCanais.png</BITMAP>
+	</PICTURE>
+
+	
+	<BMBUTTON item="ChannelList_Normal" parent="ChannelListFrame">	
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+	<!--	<ANCHORS> -->
+		  <!--  <LEFT>true</LEFT> -->
+	          <!--  <TOP>true</TOP> -->
+		  <!--  <RIGHT>true</RIGHT> -->
+		  <!--  <BOTTOM>false</BOTTOM> -->
+	<!--	</ANCHORS> -->
+	 	<BOUNDS>
+			<X>-5</X>
+			<Y>54</Y>
+			<W>140</W>
+			<H>40</H>
+		</BOUNDS>
+                <STRETCH/>
+                <BITMAP type="up">geral_off_kr.png</BITMAP>
+                <BITMAP type="over">geral_on_kr.png</BITMAP>
+                <BITMAP type="down">geral_on_kr.png</BITMAP>
+		<GROUP>ChannelList</GROUP>
+	</BMBUTTON>
+
+	<BMBUTTON item="ChannelList_Private" parent="ChannelListFrame">	
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>145</X>
+			<Y>54</Y>
+			<W>150</W>
+			<H>42</H>
+		</BOUNDS>
+		 <STRETCH/>
+                <BITMAP type="up">privado_off_kr.png</BITMAP>
+                <BITMAP type="over">privado_on_kr.png</BITMAP>
+                <BITMAP type="down">privado_on_kr.png</BITMAP>
+		<GROUP>ChannelList</GROUP>
+	</BMBUTTON>
+
+	<BMBUTTON item="ChannelList_Clan" parent="ChannelListFrame">	
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>312</X>
+			<Y>54</Y>
+			<W>140</W>
+			<H>42</H>
+		</BOUNDS>
+		 <STRETCH/>
+                <BITMAP type="up">clan_off_kr.png</BITMAP>
+                <BITMAP type="over">clan_on_kr.png</BITMAP>
+                <BITMAP type="down">clan_on_kr.png</BITMAP>
+		<GROUP>ChannelList</GROUP>
+	</BMBUTTON>
+			
+	<LISTBOX item="ChannelList" parent="ChannelListFrame">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>10</X>
+			<Y>99</Y>
+			<W>412</W>
+			<H>283</H>
+		</BOUNDS>
+		<ITEMHEIGHT>20</ITEMHEIGHT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LISTBOX>
+	<BMBUTTON item="ChannelJoin" parent="ChannelListFrame">
+		<BUTTONLOOK>BotonCustom</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>264</X>
+			<Y>387</Y>
+			<W>160</W>
+			<H>42</H>
+		</BOUNDS>
+		 <STRETCH/>
+                <BITMAP type="up">entrar_off_kr.png</BITMAP>
+                <BITMAP type="over">entrar_on_kr.png</BITMAP>
+                <BITMAP type="down">entrar_on_kr.png</BITMAP>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BMBUTTON>
+	<BMBUTTON item="ChannelListClose" parent="ChannelListFrame">	
+		<BUTTONLOOK>BotonCustom</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+                <STRETCH/>
+	<BITMAP type="up">sair_off_kr.png</BITMAP>
+                <BITMAP type="over">sair_on_kr.png</BITMAP>
+                <BITMAP type="down">sair_on_kr.png</BITMAP>
+	</BMBUTTON>
+	
+	<EDIT item="PrivateChannelInput" parent="ChannelListFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>393</Y>
+			<W>220</W>
+			<H>31</H>
+		</BOUNDS>
+		<MAXLENGTH>128</MAXLENGTH>
+		<VISIBLE>false</VISIBLE>
+	</EDIT>
+	<BUTTON item="PrivateChannelEnter" parent="ChannelListFrame">	
+		<BUTTONLOOK>BotonCustom</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>328</X>
+			<Y>340</Y>
+			<W>89</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Criar Privado</TEXT> <!-- 입장 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+
+	<BUTTON item="MyClanChannel" parent="ChannelListFrame">
+			<BUTTONLOOK>BotonCustom</BUTTONLOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>393</Y>
+			<W>220</W>
+			<H>31</H>
+		</BOUNDS>
+		<TEXT>Ir para o canal do meu clã</TEXT> <!-- 내 클랜 채널로 이동 -->
+		<VISIBLE>false</VISIBLE>
+	</BUTTON>
+		
+</XML>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   ìºë¦­í„° ì„ íƒ ìœˆë„ìš°
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+	
+<!-- í”„ë ˆìž„ ìƒì„± : CharSelection -->
+	<FRAME item="CharSelection">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- <PICTURE item="SideBar" parent="CharSelection">
+<BOUNDS>
+<X>0</X>
+<Y>70</Y>
+<W>280</W>
+<H>500</H>
+</BOUNDS>
+<STRETCH/>
+<BITMAP>SideBar.png</BITMAP>
+</PICTURE> -->	
+	
+<!-- ì„ íƒ ë§‰ëŒ€ ì´ë¯¸ì§€ -->
+	<!-- Picture : ì„ íƒ ë§‰ëŒ€ ì´ë¯¸ì§€0 -->
+	<PICTURE item="CharSel_Selectbar0" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>320</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">selectbar.tga</BITMAP>
+		<BITMAP type="over">selectbar.tga</BITMAP>
+		<BITMAP type="down">selectbar_on.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : ì„ íƒ ë§‰ëŒ€ ì´ë¯¸ì§€1 -->
+	<PICTURE item="CharSel_Selectbar1" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>370</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">selectbar.tga</BITMAP>
+		<BITMAP type="over">selectbar.tga</BITMAP>
+		<BITMAP type="down">selectbar_on.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : ì„ íƒ ë§‰ëŒ€ ì´ë¯¸ì§€2 -->
+	<PICTURE item="CharSel_Selectbar2" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>420</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">selectbar.tga</BITMAP>
+		<BITMAP type="over">selectbar.tga</BITMAP>
+		<BITMAP type="down">selectbar_on.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<!-- Picture : ì„ íƒ ë§‰ëŒ€ ì´ë¯¸ì§€3 -->
+	<PICTURE item="CharSel_Selectbar3" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>470</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">selectbar.tga</BITMAP>
+		<BITMAP type="over">selectbar.tga</BITMAP>
+		<BITMAP type="down">selectbar_on.tga</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+			
+		
+<!-- ì´ë¦„ -->
+	<!-- Label : ì´ë¦„0 -->
+	<LABEL item="CharSel_Name0" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>610</X>
+			<Y>320</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- ì´ë¦„ -->
+	</LABEL>
+
+	<!-- Label : ì´ë¦„1 -->
+	<LABEL item="CharSel_Name1" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>610</X>
+			<Y>370</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- ì´ë¦„ -->
+	</LABEL>
+
+	<!-- Label : ì´ë¦„2 -->
+	<LABEL item="CharSel_Name2" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>610</X>
+			<Y>420</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- ì´ë¦„ -->
+	</LABEL>
+
+	<!-- Label : ì´ë¦„3 -->
+	<LABEL item="CharSel_Name3" parent="CharSelection">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>610</X>
+			<Y>470</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_01</TEXT> <!-- ì´ë¦„ -->
+	</LABEL>
+
+	
+<!-- ë ˆë²¨ -->
+	<!-- Label : ë ˆë²¨0 -->
+	<LABEL item="CharSel_Level0" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>760</X>
+			<Y>320</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : ë ˆë²¨1 -->
+	<LABEL item="CharSel_Level1" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>760</X>
+			<Y>370</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : ë ˆë²¨2 -->
+	<LABEL item="CharSel_Level2" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>760</X>
+			<Y>420</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	<!-- Label : ë ˆë²¨3 -->
+	<LABEL item="CharSel_Level3" parent="CharSelection">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>760</X>
+			<Y>470</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!-- 0 Lv. -->
+	</LABEL>
+
+	
+	
+<!-- í´ëžœ -->
+	<!-- Label : í´ëžœ0 -->
+	<LABEL item="CharSel_ClanName0" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>342</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- í´ëžœ -->
+	</LABEL>
+
+	<!-- Label : í´ëžœ1 -->
+	<LABEL item="CharSel_ClanName1" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>392</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- í´ëžœ -->
+	</LABEL>
+
+	<!-- Label : í´ëžœ2 -->
+	<LABEL item="CharSel_ClanName2" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>442</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- í´ëžœ -->
+	</LABEL>
+
+	<!-- Label : í´ëžœ3 -->
+	<LABEL item="CharSel_ClanName3" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>576</X>
+			<Y>492</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_03</TEXT> <!-- í´ëžœ -->
+	</LABEL>
+	
+	
+<!-- ìºë¦­í„° ì„ íƒ ë²„íŠ¼-->
+	<!-- BUTTON : ìºë¦­í„° ì„ íƒ ë²„íŠ¼0 -->
+	<BMBUTTON item="CharSel_SelectBtn0" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>320</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+	
+	<!-- BUTTON : ìºë¦­í„° ì„ íƒ ë²„íŠ¼1 -->
+	<BMBUTTON item="CharSel_SelectBtn1" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>370</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+	
+	<!-- BUTTON : ìºë¦­í„° ì„ íƒ ë²„íŠ¼2 -->
+	<BMBUTTON item="CharSel_SelectBtn2" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>420</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+
+	<!-- BUTTON : ìºë¦­í„° ì„ íƒ ë²„íŠ¼3 -->
+	<BMBUTTON item="CharSel_SelectBtn3" parent="CharSelection">
+		<BOUNDS>
+			<X>600</X>
+			<Y>470</Y>
+			<W>225</W>
+			<H>27</H>
+		</BOUNDS>
+	</BMBUTTON>
+
+		
+<!-- í´ëžœ -->
+	<!-- Label : í´ëžœ
+	<LABEL item="CS_LabelClanName" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>578</X>
+			<Y>325</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>í´ëžœ</TEXT>
+	</LABEL> -->
+	
+	<!-- Label : í´ëžœ í‘œì‹œ
+	<LABEL item="CS_ClanNameLabel" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>628</X>
+			<Y>325</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+	</LABEL> -->
+
+
+<!-- ë°”ìš´í‹° -->
+	<!-- Label : ë°”ìš´í‹°
+	<LABEL item="CS_LabelBP" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>578</X>
+			<Y>361</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>ë°”ìš´í‹°</TEXT>
+	</LABEL> -->
+
+	<!-- Label : ë°”ìš´í‹° í‘œì‹œ
+	<LABEL item="CS_BPLabel" parent="CharSelection">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>115</R>
+			<G>146</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>628</X>
+			<Y>361</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL> -->
+
+ 
+ 
+<!-- ë²„íŠ¼ -->
+	<!-- Button : ìƒì„± -->
+	<BMBUTTON item="CS_CreateChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>220</X>
+			<Y>571</Y>
+			<W>80</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_create_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_create_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_create_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Button : ì‚­ì œ -->
+	<BMBUTTON item="CS_DeleteChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>300</X>
+			<Y>571</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_delete_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_delete_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_delete_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- Button : ì„ íƒ -->
+	<BMBUTTON item="CS_SelectChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>400</X>
+			<Y>571</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_select_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_select_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_select_on_kr.tga</BITMAP>
+	</BMBUTTON>
+	
+		<!-- Button : ë¡œê·¸ì•„ì›ƒ -->
+	<BMBUTTON item="CS_Prev" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>500</X>
+			<Y>571</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">quit_off.tga</BITMAP>
+		<BITMAP type="over">quit_on.tga</BITMAP>
+		<BITMAP type="down">quit_on.tga</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_CS_05</CONFIRMMESSAGE> <!-- GUNZë¥¼ ì¢…ë£Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? -->
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BMBUTTON>	
+	
+	<!-- Button : ì„ íƒ -->
+	<BUTTON item="CS_SelectCharDefKey" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_04</TEXT> <!-- ì„ íƒ(&amp;G) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>	
+
+<!-- Picture : ê²Œìž„ë°© ìœ ì € í‘œì‹œ -->
+	<PICTURE item="CharSel_GameRoomUser" parent="CharSelection">
+		<BOUNDS>
+			<X>660</X>
+			<Y>30</Y>
+			<W>116</W>
+			<H>84</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>icon_gameroom.tga</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>	
+
+
+<!-- Picture : ë°°ê²½ ì´ë¯¸ì§€ : Top screen -->
+	<PICTURE item="CharSel_TopScreen" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>802</W>
+			<H>602</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+
+
+	
+<!-- í”„ë ˆìž„ ìƒì„± : ìºë¦­í„° ì‚­ì œ í™•ì¸ -->
+	<FRAME item="CS_ConfirmDeleteChar">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>181</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CS_06</TEXT> <!-- ìºë¦­í„° ì‚­ì œ -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	
+	<!-- Label : ìºë¦­í„° ì‚­ì œ... -->
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>46</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_07</TEXT> <!-- ìºë¦­í„°ë¥¼ ì‚­ì œí•˜ë ¤ë©´ YES ë¥¼ ìž…ë ¥í•˜ê³ , -->
+	</LABEL>
+
+	<!-- Label : ìºë¦­í„° ì‚­ì œ... -->
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>19</X>
+			<Y>66</Y>
+			<W>260</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_08</TEXT> <!-- í™•ì¸ë²„íŠ¼ì„ ëˆŒëŸ¬ì£¼ì‹­ì‹œì˜¤. -->
+	</LABEL>
+
+	<!-- Edit : 'YES' ìž…ë ¥ì°½ -->
+	<EDIT item="CS_DeleteCharNameEdit" parent="CS_ConfirmDeleteChar">
+		<EDITLOOK>NormalEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>19</X>
+			<Y>92</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>
+	
+	<!-- Button : í™•ì¸ ë²„íŠ¼ -->
+	<BUTTON item="CS_DeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>76</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- í™•ì¸(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- Button : ì·¨ì†Œ ë²„íŠ¼ -->
+	<BUTTON item="CS_CloseConfirmDeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- ì·¨ì†Œ(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+</XML>

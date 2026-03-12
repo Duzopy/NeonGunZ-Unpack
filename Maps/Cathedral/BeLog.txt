@@ -1,0 +1,39 @@
+Starting BSP Export...
+object objdefault : objdefault: 892 ver / 1500 face 
+object objSpiralStair002 : objSpiralStair002: 396 ver / 194 face 
+object objObject002 : objObject002: 254 ver / 164 face 
+object objPlane003 : objPlane003: 32 ver / 8 face 
+object objdefault001 : objdefault001: 910 ver / 1454 face 
+object objObject005 : objObject005: 6 ver / 2 face 
+object objObject006 : objObject006: 1475 ver / 946 face 
+object objall : objall: 16182 ver / 3945 face 
+RSBsp Info : 8603 faces
+Scene Dimension ( 10192.0 6464.0 1888.7 )
+Saving Source Data.
+CSG union - 8 objects
+construct object subtree objdefault ( 1500 source polygon ) : total 4726 faces splitted 3465 leaf nodes 8361 nodes 10190 polygons
+construct object subtree objSpiralStair002 ( 194 source polygon ) : total 5 faces splitted 81 leaf nodes 257 nodes 398 polygons
+construct object subtree objObject002 ( 226 source polygon ) : total 257 faces splitted 275 leaf nodes 673 nodes 729 polygons
+construct object subtree objPlane003 ( 8 source polygon ) : total 16 faces splitted 13 leaf nodes 27 nodes 48 polygons
+construct object subtree objdefault001 ( 1462 source polygon ) : total 4287 faces splitted 3273 leaf nodes 7882 nodes 9353 polygons
+construct object subtree objObject005 ( 2 source polygon ) : total 0 faces splitted 1 leaf nodes 2 nodes 4 polygons
+construct object subtree objObject006 ( 1266 source polygon ) : total 2044 faces splitted 1826 leaf nodes 4441 nodes 5346 polygons
+construct object subtree objall ( 3945 source polygon ) : total 7074 faces splitted 2952 leaf nodes 9139 nodes 21721 polygons
+0 faces eliminated. (solid)
+8935 source polygons remain
+optimized 5527 polygons remain
+Generating Convex polygons...
+Optimize Polygon 8603 -> 7943 
+Constructing Collision BspTree. ( 5527 source polygons )
+Collision Bsp Info : total 34626 faces splitted 3687 leaf nodes 30242 nodes 62493 polygons
+Constructing OcTree. ( 7943 source polygons )
+Octree Info : total 2589 faces splitted 44 leaf nodes 87 nodes 10532 polygons
+Constructing BspTree. ( 7943 source polygons )
+RSBsp Info : total 26082 faces splitted 12605 leaf nodes 25209 nodes 34025 polygons
+Constructing Bsp Bounding Volumes.
+Saving Bsp information.
+C:\Users\Warren\Desktop\GunZMaps\Cathedral\Cathedral.RS file saved
+C:\Users\Warren\Desktop\GunZMaps\Cathedral\Cathedral.RS.bsp file saved
+C:\Users\Warren\Desktop\GunZMaps\Cathedral\Cathedral.RS.col file saved
+Exporting takes 0 minutes and     35 seconds.
+Done.

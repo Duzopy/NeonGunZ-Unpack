@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Lobby">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Lobby 화면 구성
+   
+   Ultima Atualização       : 07-Agosto-2009
+   Editor      				: Alfredo Costa - alfredocosta@live.com
+-->
+
+	
+<!-- 프레임 성 : Lobby -->
+	<FRAME item="Lobby">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<PICTURE item="LobbyBG" parent="Lobby"> 
+		<BOUNDS> 
+			<X>0</X> 
+			<Y>0</Y> 
+			<W>800</W> 
+			<H>600</H> 
+		</BOUNDS> 
+		<STRETCH/> 
+	        <BITMAP>LobbyBG.png</BITMAP> 
+	</PICTURE>
+
+         <!-- ORIGINAL -->
+	<PICTURE item="Lobby_MainBGTop" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>56</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>AnimLobby.png</BITMAP>
+	</PICTURE>
+
+<PICTURE item="RenderLobbyBG" parent="Lobby"> 
+
+<BOUNDS> 
+
+<X>0</X> 
+
+<Y>0</Y> 
+
+<W>300</W> 
+
+<H>450</H> 
+
+</BOUNDS> 
+
+<STRETCH/> 
+
+<BITMAP>render2.png</BITMAP> 
+</PICTURE>
+
+	<PICTURE item="Lobby_StripTop" parent="Lobby_MainBGTop">
+			<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>AnimLobby.png</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+
+  <!--	<PICTURE item="Lobby_StripTop" parent="Lobby_MainBGTop">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>90</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP></BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE> -->
+
+	<PICTURE item="Lobby_Logo" parent="Lobby_MainBGTop">
+		<BOUNDS>
+	  	               <X>189</X>
+			<Y>-7</Y>
+			<W>170</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq2.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 하단 바탕화면 미지
+	<PICTURE item="Lobby_MainBGBottom" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>510</Y>
+			<W>800</W>
+			<H>140</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE> -->
+
+	<!-- Picture : 하단 바탕화면 미지(펙트 효과)
+	<PICTURE item="Lobby_StripBottom" parent="Lobby_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>AnimLobby.png</BITMAP>
+	</PICTURE> -->
+
+
+
+<!-- 프레임 성 : Main Window Vadia anulada
+	<FRAME item="Lobby_Main_Frame" parent="Lobby">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME> -->
+
+	<!-- Picture : 방리스트 배경화면 미지 출력 -->
+	<PICTURE item ="Lobby_RoomListBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>319</Y>  <!-- 308 -->
+			<W>800</W>  <!-- 800 -->
+			<H>225</H>  <!-- 220 -->
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 채정보 표시창 미지 출력 -->
+	<PICTURE item ="Lobby_ChannelNameBG" parent="Lobby">
+		<BOUNDS>
+			<X>453</X> <!-- 375-->
+			<Y>65</Y>
+			<W>345</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>title_bg.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 채정보 표시 -->
+	<LABEL item="Lobby_ChannelName" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>79</G>
+			<B>166</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>456</X>
+			<Y>62</Y>
+			<W>330</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_01</TEXT> <!-- Lobby -->
+	</LABEL>
+
+	<!-- CLANLIST : 랜전때는 랜정보 표시 -->
+	<CLANLIST item="Lobby_ClanList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>18</X>
+			<Y>22</Y>
+			<W>376</W>
+			<H>160</H>
+		</BOUNDS>
+	</CLANLIST>
+
+	<!-- Picture : 랜전때는 랜정보 표시 -->
+	<PICTURE item ="Lobby_ClanInfoBG" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>404</X>
+			<Y>5</Y>
+			<W>382</W>
+			<H>205</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 랜전때는 랜 엠블럼 표시 -->
+	<PICTURE item ="Lobby_ClanInfoEmblem" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>12</X>
+			<Y>10</Y>
+			<W>67</W>
+			<H>72</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>sem_emblema.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 랜전때는 랜 름 표시 -->
+	<LABEL item="Lobby_ClanInfoName" parent="Lobby_ClanInfoBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>100</G>
+			<B>20</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>95</X>
+			<Y>8</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Label : 랜전때는 랜정보 표시 -->
+	<LABEL item="Lobby_ClanInfoDetail" parent="Lobby_ClanInfoBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>95</X>
+			<Y>28</Y>
+			<W>250</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- ZBMNUMLABEL : 랜전때는 랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoWinLose" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>53</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 랜전때는 랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoPoints" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>78</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 랜전때는 랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoTotalPoints" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>103</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 랜전때는 랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoRanking" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>128</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- PICTURE : 랜전때는 랜정보 표시
+	<PICTURE item ="Lobby_ClanInfoUnranked" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>240</X>
+			<Y>128</Y>
+			<W>128</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>unranked.tga</BITMAP>
+	</PICTURE> -->
+
+<!-- 페지 번호 버튼 1~6 -->
+	<!-- BMButton : 페지 번호 1 -->
+	<BMBUTTON item ="Lobby_RoomNo1" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>344</Y> <!-- 330 -->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page1_off.png</BITMAP>
+		<BITMAP type="over">page1_off.png</BITMAP>
+		<BITMAP type="down">page1_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 번호 2 -->
+	<BMBUTTON item ="Lobby_RoomNo2" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>360</Y> <!-- 357 -->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page2_off.png</BITMAP>
+		<BITMAP type="over">page2_off.png</BITMAP>
+		<BITMAP type="down">page2_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 번호 3 -->
+	<BMBUTTON item ="Lobby_RoomNo3" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>376</Y> <!-- 364-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page3_off.png</BITMAP>
+		<BITMAP type="over">page3_off.png</BITMAP>
+		<BITMAP type="down">page3_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 번호 4 -->
+	<BMBUTTON item ="Lobby_RoomNo4" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>392</Y> <!-- 381-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page4_off.png</BITMAP>
+		<BITMAP type="over">page4_off.png</BITMAP>
+		<BITMAP type="down">page4_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 번호 5 -->
+	<BMBUTTON item ="Lobby_RoomNo5" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>408</Y> <!-- 398-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page5_off.png</BITMAP>
+		<BITMAP type="over">page5_off.png</BITMAP>
+		<BITMAP type="down">page5_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 번호 6 -->
+	<BMBUTTON item ="Lobby_RoomNo6" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>423</Y> <!-- 415-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page6_off.png</BITMAP>
+		<BITMAP type="over">page6_off.png</BITMAP>
+		<BITMAP type="down">page6_on.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 버튼(좌) -->
+	<BMBUTTON item ="StageBeforeBtn" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>447</Y> <!-- 435-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page_cursor_l_off.png</BITMAP>
+		<BITMAP type="over">page_cursor_l_on.png</BITMAP>
+		<BITMAP type="down">page_cursor_l_on.png</BITMAP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페지 버튼(우) -->
+	<BMBUTTON item ="StageAfterBtn" parent="Lobby">
+		<BOUNDS>
+			<X>394</X>
+			<Y>462</Y> <!--455-->
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page_cursor_r_off.png</BITMAP>
+		<BITMAP type="over">page_cursor_r_on.png</BITMAP>
+		<BITMAP type="down">page_cursor_r_on.png</BITMAP>
+	</BMBUTTON>
+
+	
+<!-- 방 리스트 표시 -->
+	<!-- ROOMLIST : 방 리스트 표시 -->
+	<ROOMLIST item="Lobby_StageList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>20</X>
+			<Y>10</Y>
+			<W>763</W>
+			<H>160</H>
+		</BOUNDS>
+		<BITMAP type="back">banner_Mansion.tga</BITMAP>
+		<BITMAP type="back">banner_Prison.tga</BITMAP>
+		<BITMAP type="back">banner_Prison II.tga</BITMAP>
+		<BITMAP type="back">banner_Station.tga</BITMAP>
+		<BITMAP type="back">banner_Battle Arena.tga</BITMAP>
+		<BITMAP type="back">banner_Town.tga</BITMAP>
+		<BITMAP type="back">banner_Dungeon.tga</BITMAP>
+		<BITMAP type="back">banner_Ruin.tga</BITMAP>
+		<BITMAP type="back">banner_island.tga</BITMAP>
+		<BITMAP type="back">banner_garden.tga</BITMAP>
+		<BITMAP type="back">banner_castle.tga</BITMAP>
+		<BITMAP type="back">banner_factory.tga</BITMAP>
+		<BITMAP type="back">banner_port.tga</BITMAP>
+		<BITMAP type="back">banner_lost shrine.tga</BITMAP>
+		<BITMAP type="back">banner_Stairway.tga</BITMAP>
+		<BITMAP type="back">banner_snow_town.tga</BITMAP>
+		<BITMAP type="back">banner_Lost Shrine.tga</BITMAP>
+                <BITMAP type="back">banner_BlitzKrieg.tga</BITMAP>
+		<BITMAP type="icon" mode="0">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="2">Gladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="1">teamdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="3">teamGladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="4">Assasin-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="5">train_mode.tga</BITMAP>
+		<BITMAP type="icon" mode="6">survival-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="7">quest-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="8">berserk-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="9">unlimitdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="10">duel-mode.tga</BITMAP>
+                <BITMAP type="icon" mode="12">ChallengeQuest_Guerilla-mode.tga</BITMAP>
+		<SIZE type="width">360</SIZE>
+		<SIZE type="height">32</SIZE>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</ROOMLIST>
+
+
+<!-- 버튼 -->
+	<!-- BMButton : 게임 참가 버튼 -->
+	<BMBUTTON item="StageJoin" parent="Lobby">
+		<BOUNDS>
+			<X>271</X>
+			<Y>564</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">game_join_off.tga</BITMAP>
+		<BITMAP type="over">game_join_on.tga</BITMAP>
+		<BITMAP type="down">game_join_on.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- BMButton : 게임 성 버튼 -->
+	<BMBUTTON item="StageCreateFrameCaller" parent="Lobby">
+		<BOUNDS>
+			<X>379</X>
+			<Y>564</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">game_create_off.tga</BITMAP>
+		<BITMAP type="over">game_create_on.tga</BITMAP>
+		<BITMAP type="down">game_create_on.tga</BITMAP>
+	</BMBUTTON>
+	
+		<!-- BMBUTTON : 게임 바로하기 버튼 -->
+	<BMBUTTON item="QuickJoin" parent="Lobby">
+		<BOUNDS>
+			<X>477</X>
+			<Y>564</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">playnow_off_kr.tga</BITMAP>
+		<BITMAP type="over">playnow_on_kr.tga</BITMAP>
+		<BITMAP type="down">playnow_on_kr.tga</BITMAP>
+	</BMBUTTON>
+	
+	<!-- Button : 랜전 결성 버튼 -->
+	<BMBUTTON item ="ArrangedTeamGame" parent="Lobby">
+		<BOUNDS>
+			<X>413</X>
+			<Y>405</Y>
+			<W>88</W>
+			<H>88</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">clanwar_off_kr.tga</BITMAP>
+		<BITMAP type="over">clanwar_on_kr.tga</BITMAP>
+		<BITMAP type="down">clanwar_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+<!-- FRAME : 랜전 대팀 찾기 프레임 -->
+	<FRAME item="LobbyFindClanTeam">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>130</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_LOBBY_03</TEXT> <!-- 대 랜팀 찾기 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+	<!-- Label : 대팀 찾는 중 표시 -->
+	<LABEL item="LobbyWaitingArrangedGameLabel" parent="LobbyFindClanTeam">
+		<FONT>FONT10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>180</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_04</TEXT> <!-- 대팀 찾는 중... -->
+	</LABEL>
+	
+	<!-- Button : 랜전 취소 버튼 -->
+	<BUTTON item="ArrangedTeamGame_Cancel" parent="LobbyFindClanTeam">
+		<BOUNDS>
+			<X>133</X>
+			<Y>83</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_05</TEXT> <!-- 랜전 취소 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	
+<!-- 플레어 정보 + 채팅 + 플레어 리스트 창 -->
+	<!-- Picture : 창 미지(플레어 정보+채팅창) Lobby Chat BG-->              
+	<PICTURE item ="Lobby_BottomBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>130</Y>
+			<W>800</W>
+			<H>190</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<!-- Label : 플레어 름 표시 -->
+	<LABEL item="Lobby_PlayerName" parent="Lobby">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>398</X>  
+			<Y>140</Y>  
+			<W>119</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_06</TEXT> <!-- 름 -->
+	</LABEL>
+	
+	<!-- Label : 플레어 세정보 표시(Clan) -->
+	<LABEL item="Lobby_PlayerSpecClan" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>161</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_07</TEXT> <!-- Clan : -->
+	</LABEL>
+	
+	<!-- Label : 플레어 세정보 표시(Level) -->
+	<LABEL item="Lobby_PlayerSpecLevel" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>175</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_08</TEXT> <!-- 레벨 : 0 lv. -->
+	</LABEL>
+
+	<!-- Label : 플레어 세정보 표시(XP) -->
+	<LABEL item="Lobby_PlayerSpecXP" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>189</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_09</TEXT> <!-- 경험치 : 0% -->
+	</LABEL>
+
+	<!-- Label : 플레어 세정보 표시(BP) -->
+	<LABEL item="Lobby_PlayerSpecBP" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>203</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_10</TEXT> <!-- 바운티 : 0 -->
+	</LABEL>
+
+	<!-- Label : 플레어 세정보 표시(HP) -->
+	<LABEL item="Lobby_PlayerSpecHP" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>217</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_11</TEXT> <!-- 체력 : 0 -->
+	</LABEL>
+
+	<!-- Label : 플레어 세정보 표시(AP) -->
+	<LABEL item="Lobby_PlayerSpecAP" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>232</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_12</TEXT> <!-- 방어 : 0 -->
+	</LABEL>
+
+	<!-- Label : 플레어 세정보 표시(WT) -->
+	<LABEL item="Lobby_PlayerSpecWT" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>399</X>
+			<Y>246</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_13</TEXT> <!-- 무게 : 0 -->
+	</LABEL>
+	
+	<!-- TEXTAREA : 채팅창 -->
+	<TEXTAREA item = "ChannelChattingOutput" parent = "Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>140</Y>
+			<W>365</W>
+			<H>140</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>50</INDENTATION>
+	</TEXTAREA>
+
+	<!-- Edit : 채팅 메시지 입력창 -->
+	<EDIT item="ChannelChattingInput" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>1</R>
+			<G>169</G>
+			<B>254</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>280</Y>
+			<W>350</W>
+			<H>18</H>
+		</BOUNDS>
+		<MAXLENGTH>128</MAXLENGTH>
+	</EDIT>
+
+
+<!-- 프레임 성 : 대기 리스트 박스 -->
+	<!-- PLAYERLISTBOX : 대기 리스트 박스 -->
+	<PLAYERLISTBOX item="LobbyChannelPlayerList" parent = "Lobby" >
+		<BOUNDS>
+			<X>550</X>
+			<Y>134</Y>
+			<W>233</W>
+			<H>170</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</PLAYERLISTBOX>
+
+	
+
+<!-- 프레임 성 : 랜 가입안어있때 나오는 프레임 -->
+	<FRAME item="LobbyPlayerListClanCreateFrame" parent = "LobbyChannelPlayerList" >
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>240</W>
+			<H>184</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+	</FRAME>
+
+	<!-- Button : 랜 성 버튼 -->
+	<BMBUTTON item="LobbyPlayerListTabClanCreateButton" parent="LobbyPlayerListClanCreateFrame">
+		<BOUNDS>
+			<X>60</X>
+			<Y>75</Y>
+			<W>120</W>
+			<H>45</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">new_clan_off.tga</BITMAP>
+		<BITMAP type="over">new_clan_on.tga</BITMAP>
+		<BITMAP type="down">new_clan_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!-- BMButton : 대기 전 리스트 버튼 -->
+	<BMBUTTON item="LobbyChannelPlayerListPrev" parent="Lobby">
+		<BOUNDS>
+			<X>553</X>
+			<Y>299</Y>
+			<W>115</W>
+			<H>17</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">pageup_off.tga</BITMAP>
+		<BITMAP type="over">pageup_off.tga</BITMAP>
+		<BITMAP type="down">pageup_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!-- BMButton : 대기 다 리스트 버튼 -->
+	<BMBUTTON item="LobbyChannelPlayerListNext" parent="Lobby">
+		<BOUNDS>
+			<X>671</X>
+			<Y>311</Y>
+			<W>115</W>
+			<H>17</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">pagedown_off.tga</BITMAP>
+		<BITMAP type="over">pagedown_off.tga</BITMAP>
+		<BITMAP type="down">pagedown_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+	
+<!-- 단버튼배열 -->
+	<!-- BMBUTTON : 버튼 -->
+	<BMBUTTON item="ShopCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>384</X>
+			<Y>19</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shop_off_kr.tga</BITMAP>
+		<BITMAP type="over">shop_on_kr.tga</BITMAP>
+		<BITMAP type="down">shop_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 장비버튼 -->
+	<BMBUTTON item="EquipmentCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>476</X>
+			<Y>19</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 채변경버튼 -->
+	<BMBUTTON item="ChannelListFrameCaller" parent="Lobby">
+		<BOUNDS>
+			<X>570</X>
+			<Y>19</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">channel_off_kr.tga</BITMAP>
+		<BITMAP type="over">channel_on_kr.tga</BITMAP>
+		<BITMAP type="down">channel_on_kr.tga</BITMAP>>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 옵션버튼 -->
+	<BMBUTTON item="LobbyOptionFrame" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>664</X>
+			<Y>19</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">option_off_kr.tga</BITMAP>
+		<BITMAP type="over">option_on_kr.tga</BITMAP>
+		<BITMAP type="down">option_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+
+<!--하단버튼배열-->
+	<!-- BMBUTTON : 리플레 버튼 -->
+	<BMBUTTON item ="ReplayCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>11</X>
+			<Y>564</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">replay_off_kr.tga</BITMAP>
+		<BITMAP type="over">replay_on_kr.tga</BITMAP>
+		<BITMAP type="down">replay_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- BUTTON : 몬스터  -->
+	<BUTTON item="MonsterBookCaller" parent="Lobby">
+		<BOUNDS>
+			<X>154</X>
+			<Y>530</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">MonsterBook_off_eg.tga</BITMAP>
+		<BITMAP type="over">MonsterBook_on_eg.tga</BITMAP>
+		<BITMAP type="down">MonsterBook_on_eg.tga</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_LOBBY_A01</TEXT> <!-- 몬스터  -->
+	</BUTTON>
+	
+	<!-- BMBUTTON : 릭터변경버튼 -->
+	<BMBUTTON item="CharSelectionCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>405</X>  <!-- 12 -->
+			<Y>273</Y>
+			<W>136</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">char_off_kr.tga</BITMAP>
+		<BITMAP type="over">char_on_kr.tga</BITMAP>
+		<BITMAP type="down">char_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 로그아웃버튼 -->
+	<BMBUTTON item="Logout" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>722</X>
+			<Y>565</Y>
+			<W>90</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">deslogar.png</BITMAP>
+		<BITMAP type="over">deslogar_on.png</BITMAP>
+		<BITMAP type="down">deslogar_on.png</BITMAP>
+		<CONFIRMMESSAGE>Tem certeza de que deseja se deslogar ?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BMBUTTON>
+
+<BMBUTTON item="Exit" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">sair_off.tga</BITMAP>
+		<BITMAP type="over">sair_on.tga</BITMAP>
+		<BITMAP type="down">sair_off.tga</BITMAP>
+		<CONFIRMMESSAGE>Tem certeza de que deseja encerrar o jogo ?</CONFIRMMESSAGE>
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+		<FOCUSABLE>FALSE</FOCUSABLE>
+	</BMBUTTON>		
+	
+
+<!-- 어레지드 팀 게임 다얼로그 -->
+	<FRAME item="ArrangedTeamGameDialog" >
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>400</W>
+			<H>300</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>STR:UI_LOBBY_14</TEXT> <!-- 팀 게임 -->
+	</FRAME>
+
+	<LABEL item="Label" parent="ArrangedTeamGameDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>110</X>
+			<Y>80</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_15</TEXT> <!-- 실력 비슷한 랜과만 대전 -->
+	</LABEL>
+	<BUTTON item="BalancedMatchingCheckBox" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>80</X>
+			<Y>80</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+
+	<TEXTAREA item = "ArrangedTeam_Message" parent = "ArrangedTeamGameDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>380</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_16</TEXT> <!-- 팀 게임 참여할 플레어를 선해주십시오 -->
+		<EDITABLE>FALSE</EDITABLE>
+	</TEXTAREA>
+
+	<PLAYERSELECTLISTBOX item="ArrangedTeamSelect" parent="ArrangedTeamGameDialog">
+		<BOUNDS>
+			<X>90</X>
+			<Y>110</Y>
+			<W>290</W>
+			<H>130</H>
+		</BOUNDS>
+		<MULTISELECT/>
+	</PLAYERSELECTLISTBOX>
+
+	<BUTTON item="ArrangedTeamDialogOk" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>200</X>
+			<Y>250</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_17</TEXT> <!-- 확(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ArrangedTeamDialogClose" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>300</X>
+			<Y>250</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	
+	
+<!-- 랜 탈퇴 확 -->
+	<FRAME item="ConfirmLeaveClan">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>130</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_LOBBY_19</TEXT> <!-- 랜 탈퇴 확 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	
+	<!-- Label : 랜 탈퇴 확 -->
+	<LABEL item="Label" parent="ConfirmLeaveClan">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>180</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_20</TEXT> <!-- 랜 탈퇴하시겠습니까? -->
+	</LABEL>
+	
+	<BUTTON item="LeaveClanOK" parent="ConfirmLeaveClan">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>75</X>
+			<Y>80</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_21</TEXT> <!-- 탈퇴(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="LeaveClanCancel" parent="ConfirmLeaveClan">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>181</X>
+			<Y>80</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+</XML>
